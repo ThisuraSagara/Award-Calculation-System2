@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="842.0" prefWidth="987.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cwk_002.FXMLRegisterController">
+   <children>
+      <Label layoutX="230.0" layoutY="39.0" text="STUDENT REGISTRATION" textFill="#1e1386">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <VBox layoutX="118.0" layoutY="221.0" prefHeight="444.0" prefWidth="239.0">
+         <children>
+            <Label fx:id="lblFirstName" prefHeight="62.0" prefWidth="107.0" text="First Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblLastName" prefHeight="62.0" prefWidth="98.0" text="Last Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDegreeTitle" prefHeight="75.0" prefWidth="105.0" text="Degree Title">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <TextField fx:id="txtFirstName" layoutX="452.0" layoutY="242.0" prefHeight="31.0" prefWidth="425.0" />
+      <TextField fx:id="txtLastName" layoutX="452.0" layoutY="296.0" prefHeight="31.0" prefWidth="425.0" />
+      <RadioButton fx:id="oneRadioButton" layoutX="452.0" layoutY="457.0" mnemonicParsing="false" text="MSc in Computer Sciences by Coursework ">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="q" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="twoRadioButton" layoutX="452.0" layoutY="508.0" mnemonicParsing="false" text="MSc in Computer Science by Coursework and Research " toggleGroup="$q">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="threeRadioButton" layoutX="452.0" layoutY="554.0" mnemonicParsing="false" text="MSc in Computer Science by Research " toggleGroup="$q">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="lblRegNumber" layoutX="118.0" layoutY="170.0" text="Reg Number">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRegNumber" layoutX="452.0" layoutY="153.0" prefHeight="55.0" prefWidth="172.0" />
+      <Button fx:id="btnSubmit" layoutX="452.0" layoutY="650.0" mnemonicParsing="false" onAction="#Submit" prefHeight="62.0" prefWidth="98.0" text="submit">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblmessage" layoutX="133.0" layoutY="729.0" prefHeight="21.0" prefWidth="462.0" text="Label" />
+   </children>
+</AnchorPane>

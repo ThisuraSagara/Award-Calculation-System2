@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="673.0" prefWidth="964.0" style="-fx-background-image: 2017-04-13 01.02.52 1.jpg;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cwk_002.FXMLLoginController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="321.0" layoutY="76.0" text="Gugsi University of Computer Sciences">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUsername" layoutX="80.0" layoutY="232.0" prefHeight="72.0" prefWidth="107.0" text="Username">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPassword" layoutX="79.0" layoutY="357.0" text="Password">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="349.0" layoutY="243.0" prefHeight="50.0" prefWidth="416.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="349.0" layoutY="344.0" prefHeight="56.0" prefWidth="416.0" />
+      <Button fx:id="btnLogin" layoutX="537.0" layoutY="489.0" mnemonicParsing="false" onAction="#Login" prefHeight="56.0" prefWidth="83.0" text="Login">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="237.0" fitWidth="253.0" layoutX="-2.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Pictures/Screenshots/download.png" />
+         </image>
+      </ImageView>
+    </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>

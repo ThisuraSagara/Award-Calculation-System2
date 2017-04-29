@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="972.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cwk_002.FXMLEnrollmentController">
+   <children>
+      <Label layoutX="249.0" layoutY="38.0" prefHeight="45.0" prefWidth="306.0" text="Enrollment">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="166.0" text="GPA">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="309.0" text="Degree Title" />
+      <Button fx:id="btnGPA" layoutX="82.0" layoutY="164.0" mnemonicParsing="false" onAction="#gpa" text="GPA">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDegreeTitle" layoutX="82.0" layoutY="294.0" mnemonicParsing="false" onAction="#degree" text="Degree Title">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="831.0" layoutY="418.0" mnemonicParsing="false" onAction="#degree" prefHeight="26.0" prefWidth="98.0" text="NEXT">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Button>
+      <Label layoutX="482.0" layoutY="285.0" prefHeight="48.0" prefWidth="241.0" />
+      <Label fx:id="lblmessagegpa" layoutX="503.0" layoutY="182.0" text="Label" />
+      <Label fx:id="lblmessagedegreetitle" layoutX="503.0" layoutY="306.0" text="Label" />
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
